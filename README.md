@@ -12,17 +12,16 @@
 
 
 ## Demo 
-Visit the folowing third party website []() links to see zoid in action 
-1. Extemely Basic integration
-
-2. Some features tested
+Visit the following third party website [third-party-nextjs-zoid.vercel.app](https://third-part-nextjs-zoid.vercel.app/) links to see zoid in action 
+1. Extemely Basic integration [Button](https://third-part-nextjs-zoid.vercel.app/test-button.html)
 
 
-## Installation
+2. Some features tested [Advanced](https://third-part-nextjs-zoid.vercel.app/test-advanced.html)
 
+> [!NOTE]
+> Each Zoiid Ifame comes from the following [NextJs 14](https://nextjs-zoid.vercel.app/) app
 
-
-## About thhis repo
+## About this repo
 This repo is based on the starter [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 It uses [Turborepo](https://turborepo.org) and contains:
 

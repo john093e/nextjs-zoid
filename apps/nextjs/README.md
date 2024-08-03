@@ -14,7 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 It integrate [Zoid](https://github.com/krakenjs/zoid) with the help of [Rollup](rollupjs.org/). 
 
 
-## What's in?
+## 1. What's in?
 
 We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
@@ -23,21 +23,6 @@ We try to keep this project as simple as possible, so you can start with just th
 - [Zoid](https://trpc.io)
 - [Rollup](https://rollupjs.org)
 
-
-## Getting Started
-
-### 1. First, set your env file
-- Copy `.env.example` at the same place
-- Rename the copy to `.env`
-
-### 2.  run the development server:
-
-```bash
-# First install the depedencies
-npm install
-# Then start Next.js dev server, Under the hood it will build bundle and watch Zoid components
-npm run dev
-```
 
 ### 2. Embbed the Zoid component
 Embed into any vanilla Html page one of the following Zoid test component :
@@ -66,29 +51,19 @@ A simple Button.
 > [!NOTE]
 > Change `localhost:3000` with your registred domain on production
 
-### 3. Run the Page
-Run your page under localhost or registred domain
-
-### 4. 
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the usual HelloWold page.
-
-## Terminal Command
-
-```bash
-# Build and watch Zoid components, then start Next.js dev server
-npm run dev
-# Build Zoid components and then Next.js for production
-npm run build
-# Build Zoid components on demand
-npm run build:zoid
-```
 
 ## Required Files
-- tsconfig.rollup.json
-- rollup.config.mjs
-- src/types/zoid.d.ts
-- components/zoid/*.ts
+- **rollup.config.mjs** : 
+To bundle each zoid component with its dependencies and generate the \[filename\].js
+
+- **tsconfig.rollup.json** :
+Typescript configuratioon specific to the bundlling process
+
+- **src/types/zoid.d.ts** :
+An ugly but working typing of zoid and some other libarry from the @krakenJs suite
+
+- **components/zoid/*.ts** :
+Folder to place the Zoid components, for now the RollupJs config expect to find a zoid components per .ts, so eah zoid omponoent should be .ts and everything in on file. 
 - app/api/widgets/[component]/route
 - a page with Zoid integrated :
   - example 1: app/zoid-button/page.tsx

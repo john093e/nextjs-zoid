@@ -7,12 +7,12 @@ import { Toaster } from "@acme/ui/toast";
 
 export const metadata: Metadata = {
   title: "Advanced example with Zoid",
-  description: "Simple example with Zoid",
+  description: "Advanced example with Zoid",
   openGraph: {
     title: "Advanced example with Zoid",
-    description: "Simple example with Zoid",
+    description: "Advanced example with Zoid",
     url: "https://nextjs-zoid.vercel.app",
-    siteName: "Advanced example with Zoid",
+    siteName: "NextJs Zoid",
   },
 };
 
