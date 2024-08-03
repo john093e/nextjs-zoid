@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advanced example with Zoid",
     description: "Simple example with Zoid",
-    url: "https://create-t3-turbo.vercel.app",
+    url: "https://nextjs-zoid.vercel.app",
     siteName: "Advanced example with Zoid",
   },
 };

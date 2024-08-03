@@ -24,7 +24,7 @@ const rollupConfig = files.map(file => {
   return {
     input: inputPath,
     output: {
-      file: `dist/${outputFileName}`, // Output directory and file name
+      file: `src/widgets/${outputFileName}`, // Output directory and file name
       format: 'iife', // Format suitable for browsers
       name: path.basename(outputFileName, '.js')
       .split("-")

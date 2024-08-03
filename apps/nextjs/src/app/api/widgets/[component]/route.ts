@@ -16,7 +16,7 @@ export function GET(
 
   try {
     // Construct the path to the component's JavaScript file
-    const filePath = join(process.cwd(), 'dist', `${component}.js`);
+    const filePath = join(process.cwd(), 'src', 'widgets', `${component}.js`);
 
     // Read the file content
     const file = readFileSync(filePath, 'utf8');

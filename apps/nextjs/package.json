@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm with-env rollup -c && next build",
     "build:zoid": "rollup -c",
-    "clean": "git clean -xdf dist .next node_modules .rollup.cache",
+    "clean": "git clean -xdf dist .turbo .next node_modules .rollup.cache",
     "dev": "pnpm with-env rollup -c --watch & next dev -p 3000",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
