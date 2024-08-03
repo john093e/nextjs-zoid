@@ -33,14 +33,17 @@ It uses [Turborepo](https://turborepo.org) and contains:
 .vscode
   └─ Recommended extensions and settings for VSCode users
 apps
-  ├─ next.js
+  ├─ nextjs
   |   ├─ Next.js 14
   |   ├─ React 18
-  |   └─ Tailwind CSS
-  └─ next.js
+  |   ├─ Tailwind CSS
+  |   ├─ Zoid
+  |   └─ RollupJs
+  └─ third-party-website
       ├─ Next.js 14
       ├─ React 18
-      └─ Tailwind CSS
+      ├─ Tailwind CSS
+      └─ Vanilla HTML
 packages
   └─ ui
       └─ Start of a UI package for the webapp using shadcn-ui
@@ -58,7 +61,7 @@ tooling
 > In this template, we use `@acme` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@acme` to something like `@my-company` or `@project-name`.
 
 ## Quick Start
-To get it running, follow the steps below:
+To get it running in local, follow the steps below:
 
 ### 1. Setup dependencies
 
@@ -70,9 +73,21 @@ pnpm i
 # There is an `.env.example` in the root directory you can use for reference
 cp .env.example .env
 
-# Push the Drizzle schema to the database
-pnpm db:push
+# Run the TuboRepo project
+turbo run dev
 ```
+
+### 2. Run the TurboRepo
+
+```bash
+# Run the TuboRepo project
+turbo run dev
+```
+
+### 3. Visit one of the following example
+
+- Extremly basic example : http://localhost:3001/test-button.html
+- Advanced example : http://localhost:3001/advanced-zoid.html
 
 
 ## Useful Links : 
