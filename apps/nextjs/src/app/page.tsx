@@ -9,7 +9,7 @@ export default function HomePage() {
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
             Next Js using Zoid
           </h1>
-          <p>This website expose 2 Zoid components to the followinng website : <Link href="third-part-nextjs-zoid.vercel.app">third-part-nextjs-zoid.vercel.app</Link></p>
+          <p>This website expose 2 Zoid components to the followinng website : <Link href="https://third-part-nextjs-zoid.vercel.app">third-part-nextjs-zoid.vercel.app</Link></p>
         </div>
       </main>
   );
