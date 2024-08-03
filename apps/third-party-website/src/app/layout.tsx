@@ -6,26 +6,14 @@ import { cn } from "@acme/ui";
 
 import "~/app/globals.css";
 
-import { env } from "~/env";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
-      : "http://localhost:3000",
-  ),
-  title: "Create T3 Turbo",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  title: "NextJs Zoid - Third Party Website",
+  description: "Simple third party website with zoid example",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
+    title: "NextJs Zoid - Third Party Website",
+    description: "Simple third party website with zoid example",
+    url: "https://third-party-website-nnext-zoid.vercel.app",
+    siteName: "NextJs Zoid - Third Party Website",
   },
 };
 
@@ -46,7 +34,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           GeistMono.variable,
         )}
       >
-        {props.children}
+          {props.children}
       </body>
     </html>
   );

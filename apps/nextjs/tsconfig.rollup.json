@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "esnext"],  // Include necessary libs
+      "strict": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",  // Use 'node' for module resolution
+      "resolveJsonModule": true,
+      "jsx": "react",  // Assume JSX is transpiled to React for Rollup build
+      "allowSyntheticDefaultImports": true, // Commonly used with rollup
+      "target": "es6",  // Set target to es6, which is common for bundles
+      "outDir": "./dist",  // Rollup will handle this, but it's good practice
+      "noEmit": false,  // Allow emit since Rollup will handle bundling
+      "isolatedModules": false,  // Rollup will handle module bundling
+      "paths": {
+        "~/*": ["./src/*"]
+      }
+    },
+    "include": [
+      "src/components/zoid/**/*.ts",  // Only include the files that need to be bundled
+      "src/types/zoid.d.ts"  // Include the types directory
+    ],
+    "exclude": [
+      "node_modules", 
+      ".next", 
+      "dist"
+    ]
+  }
+  

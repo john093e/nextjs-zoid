@@ -6,17 +6,8 @@ createJiti(fileURLToPath(import.meta.url))("./src/env");
 
 /** @type {import("next").NextConfig} */
 const config = {
-  /** Enable images rom external domains */
-  images: {
-    remotePatterns: [
-      // Popsy illustrations
-      {
-        protocol: "https",
-        hostname: "illustrations.popsy.co",
-      },
-    ],
-  },
   reactStrictMode: true,
+
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: [
     "@acme/ui",

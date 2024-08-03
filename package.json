@@ -1,16 +1,18 @@
 {
-  "name": "create-t3-turbo",
+  "name": "nextjs-zoid",
   "private": true,
   "engines": {
     "node": ">=20.15.0"
   },
   "packageManager": "pnpm@9.6.0",
+  "keywords": [
+    "nextjs",
+    "zoid"
+  ],
   "scripts": {
     "build": "turbo run build",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo run clean",
-    "db:push": "turbo -F @acme/db push",
-    "db:studio": "turbo -F @acme/db studio",
     "dev": "turbo watch dev",
     "dev:next": "turbo watch dev -F @acme/nextjs...",
     "format": "turbo run format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
@@ -24,9 +26,9 @@
   },
   "devDependencies": {
     "@acme/prettier-config": "workspace:*",
-    "@turbo/gen": "^2.0.8",
+    "@turbo/gen": "^2.0.11",
     "prettier": "catalog:",
-    "turbo": "^2.0.8",
+    "turbo": "^2.0.11",
     "typescript": "catalog:"
   },
   "prettier": "@acme/prettier-config"

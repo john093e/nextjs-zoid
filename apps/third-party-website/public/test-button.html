@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Zoid from a NextJs into Vanilla HTML</title>
+    <!-- ========================================================== -->
+    <!-- PLACE THE URL OF THE ZOID COMPONENT IN THE HEAD TAG -->
+    <!-- ========================================================== -->
+    <script src="https://nextjs-zoid.vercel.app/api/widgets/button" id="widget-id"></script>
+    <!-- <script src="http://localhost:3000/api/widgets/button" id="widget-id"></script> -->
+  </head>
+  <body>
+    <!-- ========================================================== -->
+    <!-- ADD A TARGET CONTAINER FO THE IFRAME -->
+    <!-- ========================================================== -->
+    <div id="button-target" style="display: inline-block;"></div>
+    
+
+    <!-- ========================================================== -->
+    <!-- ADD THE SCRIPT TO RENDER THE ZOID COMPONENT AT THE END OF THE BODY TAG -->
+    <!-- ========================================================== -->
+    <script>
+        Button({
+          name: 'Remove Zoid Button'
+      }).render('#button-target');
+    </script>
+    
+  </body>
+</html>

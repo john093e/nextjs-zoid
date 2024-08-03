@@ -1,13 +1,12 @@
 {
-  "name": "@acme/nextjs",
+  "name": "@acme/thid-party-website",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm with-env rollup -c && next build",
-    "build:zoid": "rollup -c",
-    "clean": "git clean -xdf dist .next node_modules .rollup.cache",
-    "dev": "pnpm with-env rollup -c --watch & next dev -p 3000",
+    "build": "pnpm with-env next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "pnpm with-env next dev -p 3001",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "start": "pnpm with-env next start",
@@ -21,19 +20,13 @@
     "next": "^14.2.5",
     "react": "catalog:react18",
     "react-dom": "catalog:react18",
-    "zod": "catalog:",
-    "zoid": "^9.0.86"
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@acme/prettier-config": "workspace:*",
     "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-replace": "^5.0.7",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.14.14",
     "@types/react": "catalog:react18",
     "@types/react-dom": "catalog:react18",
@@ -41,7 +34,6 @@
     "eslint": "catalog:",
     "jiti": "^1.21.6",
     "prettier": "catalog:",
-    "rollup": "^4.20.0",
     "tailwindcss": "^3.4.7",
     "typescript": "catalog:"
   },

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Zoid from a NextJs into Vanilla HTML</title>
+    <!-- Tailwind for styling purposes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ========================================================== -->
+    <!-- PLACE THE URL OF THE ZOID COMPONENT IN THE HEAD TAG -->
+    <!-- ========================================================== -->
+    <script src="https://nextjs-zoid.vercel.app/api/widgets/advanced-zoid" id="widget-id"></script>
+    <!-- <script src="http://localhost:3000/api/widgets/advanced-zoid" id="widget-id"></script> -->
+  </head>
+  <body class="p-5 bg-white dark:bg-gray-900 antialiased">
+
+
+    <div class="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+      <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+        <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800 relative">
+  
+          <!-- ========================================================== -->
+          <!-- ADD A TARGET CONTAINER FO THE IFRAME -->
+          <!-- ========================================================== -->
+          <div id="advanced-zoid-container" class="w-full h-full"></div>
+  
+            <!-- <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt=""> -->
+        </div>
+      </div>
+      <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+        <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+      </div>
+    </div>
+    
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- ========================================================== -->
+    <!-- ADD THE SCRIPT TO RENDER THE ZOID COMPONENT AT THE END OF THE BODY TAG -->
+    <!-- ========================================================== -->
+    <script>
+      // Confetti js 
+      const jsConfetti = new JSConfetti();
+      const CONFETTI_ARGS = [
+        {},
+        { confettiRadius: 12, confettiNumber: 100 },
+        { emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'] },
+        { emojis: ['⚡️', '💥', '✨', '💫'] },
+        { emojis: ['🦄'], confettiRadius: 100, confettiNumber: 30 },
+        {
+          confettiColors: ['#ffbe0b', '#fb5607', '#ff006e', '#8338ec', '#3a86ff'],
+          confettiRadius: 10,
+          confettiNumber: 150,
+        },
+        {
+          confettiColors: ['#9b5de5', '#f15bb5', '#fee440', '#00bbf9', '#00f5d4'],
+          confettiRadius: 6,
+          confettiNumber: 300,
+        },
+      ]
+      function generateRandomNumber(min, max, fractionDigits = 0) {
+        const randomNumber = Math.random() * (max - min) + min
+
+        return Math.floor(randomNumber * (10 ** fractionDigits)) / (10 ** fractionDigits)
+      }
+      function generateRandomArrayElement(arr){
+        return arr[generateRandomNumber(0, arr.length)]
+      }
+
+      AdvancedZoid({
+        buttonTxt: 'Magic Button',
+        onConfetti: () => jsConfetti.addConfetti(generateRandomArrayElement(CONFETTI_ARGS))
+      }).render('#advanced-zoid-container');
+    </script>
+  </body>
+</html>
