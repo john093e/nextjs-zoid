@@ -290,10 +290,10 @@ importers:
         version: 7.35.0(eslint@9.7.0)
       eslint-plugin-react-hooks:
         specifier: rc
-        version: 5.1.0-rc-187dd6a7-20240806(eslint@9.7.0)
+        version: 5.1.0-rc-f90a6bcc-20240827(eslint@9.7.0)
       eslint-plugin-turbo:
-        specifier: ^2.0.12
-        version: 2.0.12(eslint@9.7.0)
+        specifier: ^2.1.0
+        version: 2.1.0(eslint@9.7.0)
       typescript-eslint:
         specifier: rc-v8
         version: 8.0.0-alpha.62(eslint@9.7.0)(typescript@5.5.3)
@@ -1706,8 +1706,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
-  eslint-plugin-react-hooks@5.1.0-rc-187dd6a7-20240806:
-    resolution: {integrity: sha512-glBBlHhCbg/Jm50sSKiYj2aAa6Bf1IvHHg/sChrXudGHzhYPc3+0i0scSBzgxHEy5CNkA7sQwy8GM46yaSj5wA==}
+  eslint-plugin-react-hooks@5.1.0-rc-f90a6bcc-20240827:
+    resolution: {integrity: sha512-4VVGsX8nzU9WbsHmdNDi8z4KBehX0DxSDuoO2cb/OpY9kcXDbaaOpUcR8r6USp+6WhqP2/yJ6nrCdT79rnaVtg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -1718,8 +1718,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
-  eslint-plugin-turbo@2.0.12:
-    resolution: {integrity: sha512-vXWKer7F0RPTcVy1B+hFTEK4mlEOpouB8MCAFD3WW4C6t98wvuDCsIPjxIldpxg7CnwmRxALpNWgNVkU2LVVEQ==}
+  eslint-plugin-turbo@2.1.0:
+    resolution: {integrity: sha512-+CWVY29y7Qa+gvrKSzP+TOYrHAlNLCh/97K5VtDdnpH54h/JFmnd3U0aSG6WANe0HgAK8NHQfeWFDdRzfDqbKA==}
     peerDependencies:
       eslint: '>6.6.0'
 
@@ -4787,7 +4787,7 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.0
 
-  eslint-plugin-react-hooks@5.1.0-rc-187dd6a7-20240806(eslint@9.7.0):
+  eslint-plugin-react-hooks@5.1.0-rc-f90a6bcc-20240827(eslint@9.7.0):
     dependencies:
       eslint: 9.7.0
 
@@ -4813,7 +4813,7 @@ snapshots:
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-turbo@2.0.12(eslint@9.7.0):
+  eslint-plugin-turbo@2.1.0(eslint@9.7.0):
     dependencies:
       dotenv: 16.0.3
       eslint: 9.7.0
