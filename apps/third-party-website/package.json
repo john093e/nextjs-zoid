@@ -34,7 +34,7 @@
     "eslint": "catalog:",
     "jiti": "^1.21.6",
     "prettier": "catalog:",
-    "tailwindcss": "^3.4.7",
+    "tailwindcss": "^3.4.14",
     "typescript": "catalog:"
   },
   "prettier": "@acme/prettier-config"
